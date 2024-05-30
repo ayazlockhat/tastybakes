@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Review extra fonts */
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f2f6;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    background: linear-gradient(to right,#ffd7e7, #ffbfd9, #f78da7);
+}
+
+/*Navbar designs*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header is above other content */
+    background: linear-gradient(to right,#ffd7e7, #ffbfd9, #f78da7);
+    padding: 40px 10px;
+    transition: top 0.3s; /* Add smooth transition for better user experience */
+    display: flex;
+    justify-content: space-between; /* Align items to both edges of the header */
+    align-items: center;
+}
+
+.header a {
+    color: #451e46;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: 'poppins', serif;
+}
+
+.header a.headerName {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 45px;
+    font-weight: bold;
+    color: #4a144b;
+    margin-left: 100px;
+}
+
+.headerLinks a:hover {
+    color: white;
+}
+
+.headerLinks {
+    margin-right: 5%;
+}
