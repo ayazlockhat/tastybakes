@@ -5,10 +5,22 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* var(--accent-color) 
+background: linear-gradient(to right,#ffd7e7, #ffbfd9, #f78da7);
+*/ 
+
+:root {
+    --text-color: #533833;
+    --accent-color: #E6C2BF;
+    --accent-color-2: #FFFCED;
+}
+
 body, html {
     width: 100%;
     height: 100%;
-    background-color: #f1f2f6;
 }
 html {
     scroll-behavior: smooth;
@@ -19,47 +31,228 @@ body {
     margin: 0;
     padding: 0;
     z-index: 0;
-    background: linear-gradient(to right,#ffd7e7, #ffbfd9, #f78da7);
+    
 }
 
-/*Navbar designs*/
+.page-title {
+    color: var(--text-color);
+    font-size: 50px;
+    font-family: "playball", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.page-title::after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 3px;
+    background: var(--text-color);
+    margin: 5px auto;
+    border-radius: 2px;
+}
+
+.page-title::before {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 3px;
+    background: var(--text-color);
+    margin: 5px auto;
+    border-radius: 2px;
+}
+
+/* Navbar designs */
 .header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Ensure the header is above other content */
-    background: linear-gradient(to right,#ffd7e7, #ffbfd9, #f78da7);
-    padding: 40px 10px;
-    transition: top 0.3s; /* Add smooth transition for better user experience */
     display: flex;
-    justify-content: space-between; /* Align items to both edges of the header */
+    justify-content: space-between;
     align-items: center;
+    background: linear-gradient(90deg, rgba(254,251,234,1) 0%, rgba(255,219,224,1) 65%, rgba(255,205,228,1) 100%);
+    box-sizing: border-box;
 }
 
-.header a {
-    color: #451e46;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 500;
-    font-family: 'poppins', serif;
+.headerTitle {
+    padding-left: 60px;
+    padding-top: 10px;
+    font-family: "ms madi", sans-serif; /* Alt text font */
 }
 
-.header a.headerName {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 45px;
-    font-weight: bold;
-    color: #4a144b;
-    margin-left: 100px;
-}
-
-.headerLinks a:hover {
-    color: white;
+.headerLinksContainer {
+    display: flex;
+    align-items: center;
+    padding-right: 60px;
+    padding-bottom: 30px;
 }
 
 .headerLinks {
-    margin-right: 5%;
+    display: flex;
+    gap: 20px;
+
+}
+
+.link {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: var(--accent-color-2);
+}
+
+.socialLinks {
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 24px;
+}
+
+.social-link:hover {
+    color: var(--accent-color-2);
+}
+
+/* Home/Welcome Page */
+.homePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(254,251,234,1) 0%, rgba(255,219,224,1) 65%, rgba(255,205,228,1) 100%);
+    height: 700px;
+}
+
+/* UNCOMMENT WHEN BACKGROUND STICKER IS IMPLEMENTED */
+/* .homePage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/sticker.png') no-repeat center center;
+    background-size: contain;
+    z-index: 1;
+} */
+
+.homeContentLeft {
+    width: 600px;
+    margin: 0.5rem 1rem;
+    padding-right: 400px;
+    z-index: 2;
+}
+
+.homeContentLeft span {
+    font-family: "playball", sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.homeContentLeft p {
+    font-family: 'lato', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.orderButton {
+    padding: 15px 25px;
+    width: 100px;
+    background-color: var(--text-color);
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.galleryButton {
+    padding: 10px 20px;
+    height: 75%;
+    background-color: #fff;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.orderButton:hover {
+    background-color: var(--accent-color);
+}
+
+.galleryButton:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+.homeSocialLinks {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.home-social-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 36px;
+}
+
+.home-social-link:hover {
+    color: var(--accent-color);
+}   
+
+.homeContentRight {
+    width: 600px;
+    margin: 0.5rem 1rem;
+    z-index: 2;
+}
+
+.homeContentRight img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Gallery */
+.gallerySection {
+    background-color: #f1f2f6;
+}
+
+.galleryContent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.galleryCard {
+    margin: 0.5rem 1rem;
+}
+
+.galleryImg {
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
