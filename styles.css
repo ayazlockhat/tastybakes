@@ -370,7 +370,7 @@ body {
 
 /* Media Queries */
 
-/* Extra Small Devices (Phones, 600px and down) */
+/* Regular mobile Devices (Phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .page-title {
     font-size: 40px;
@@ -381,9 +381,12 @@ body {
     width: 140px;
   }
 
+  .header {
+    gap: 10px;
+  }
   .headerLinksContainer {
     padding-bottom: 0;
-    padding-right: 30px;
+    padding-right: 15px;
     gap: 15px;
   }
   .headerLinks {
@@ -392,12 +395,15 @@ body {
   .socialLinks {
     margin: 0;
   }
+  .link {
+    font-size: 16px;
+  }
 
   .headerTitle {
     padding: 0;
   }
   .headerLogo {
-    width: 100px;
+    width: 80px;
   }
   .homePage {
     flex-direction: column;
@@ -414,7 +420,7 @@ body {
     font-size: 50px;
   }
   .homeContentLeft p {
-    font-size: 18px;
+    font-size: 20px;
   }
   .homeContentRight {
     display: none;
@@ -425,6 +431,10 @@ body {
   }
   .orderButton {
     width: 100px;
+    font-size: 16px;
+  }
+  .galleryButton {
+    font-size: 16px;
   }
 
   .gallery-container {
@@ -433,15 +443,16 @@ body {
     justify-content: center;
   }
   .gallery-item {
-    width: calc(50% - 30px);
-    height: 185px;
+    width: 47%;
+    height: auto;
+    margin: 5px;
   }
   .gallery-item img {
     width: 100%;
     height: 100%;
   }
   .image-text {
-    font-size: 23px;
+    font-size: 24px;
     padding: 0;
   }
   .image-text::after {
@@ -473,7 +484,8 @@ body {
 }
 
 /* Small Devices (Portrait tablets and large phones, 600px and up) */
-
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+}
 /* Medium Devices (Landscape tablets, 768px and up) */
 
 /* Large Devices (Laptops/desktops, 992px and up) */
