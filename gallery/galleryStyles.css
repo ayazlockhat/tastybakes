@@ -92,14 +92,13 @@ body {
   color: var(--accent-color-2);
 }
 
-.introSection {
-  /* Adjust the height as needed */
-  overflow: hidden;
-}
-
-.introPhoto {
-  width: 100%;
-  height: auto;
+.gallery-Intro {
+  background: linear-gradient(
+    90deg,
+    rgba(254, 251, 234, 1) 0%,
+    rgba(255, 219, 224, 1) 65%,
+    rgba(255, 205, 228, 1) 100%
+  );
 }
 
 /* Media Queries */
