@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* 
+background: linear-gradient(to right,#ffd7e7, #ffbfd9, #f78da7);
+*/
+
+:root {
+  --text-color: #533833;
+  --accent-color: #e6c2bf;
+  --accent-color-2: #fffced;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #fef8fc;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
+
+/* Navbar designs */
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(254, 251, 234, 1) 0%,
+    rgba(255, 219, 224, 1) 65%,
+    rgba(255, 205, 228, 1) 100%
+  );
+  box-sizing: border-box;
+}
+
+.headerTitle {
+  padding-left: 60px;
+  padding-top: 10px;
+  font-family: "ms madi", sans-serif; /* Alt text font */
+}
+
+.headerLinksContainer {
+  display: flex;
+  align-items: center;
+  padding-right: 60px;
+  padding-bottom: 30px;
+}
+
+.headerLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.link:hover {
+  color: var(--accent-color-2);
+}
+
+.socialLinks {
+  display: flex;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+.social-link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 24px;
+}
+
+.social-link:hover {
+  color: var(--accent-color-2);
+}
+
+.orderIntro-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.order-Intro {
+  width: 600px;
+  margin: 0.5rem 1rem;
+}
+
+.order-Intro span {
+  font-family: "playball", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.order-Intro p {
+  font-family: "lato", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.orderFormContainer {
+  width: 800px;
+  background-color: white;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.orderForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.orderForm .formGroup {
+  width: 48%;
+  margin-bottom: 1rem;
+}
+
+.orderForm label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.orderForm label b {
+  color: red;
+}
+
+.orderForm input,
+.orderForm textarea {
+  width: 100%; /* Fill the width of the form group */
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+}
+
+.orderForm input:focus,
+.orderForm textarea:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.orderForm textarea {
+  max-width: 100%; /* Prevents textarea from growing beyond its container */
+  overflow: hidden; /* Hides overflow content */
+}
+
+.submitButtonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-top: 1rem;
+}
+
+.orderForm .submitButton {
+  width: auto; /* Adjust the width to fit content */
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  background-color: var(--text-color);
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.orderForm .submitButton:hover {
+  background-color: var(--accent-color);
+}
+
+/* Media Queries */
+/* Regular mobile Devices (Phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .page-title {
+    font-size: 40px;
+    padding: 0;
+  }
+  .page-title::after,
+  .page-title::before {
+    width: 140px;
+  }
+
+  .header {
+    gap: 10px;
+  }
+  .headerLinksContainer {
+    padding-bottom: 0;
+    padding-right: 15px;
+    gap: 15px;
+  }
+  .headerLinks {
+    gap: 10px;
+  }
+  .socialLinks {
+    margin: 0;
+  }
+  .link {
+    font-size: 16px;
+  }
+  .headerTitle {
+    padding: 0;
+  }
+  .headerLogo {
+    width: 80px;
+  }
+}
