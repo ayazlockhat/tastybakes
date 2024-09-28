@@ -233,4 +233,68 @@ body {
   .headerLogo {
     width: 80px;
   }
+  .order-Intro span {
+    font-size: 35px;
+  }
+  .order-Intro p {
+    font-size: 16px;
+  }
+  .orderFormContainer {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .orderForm .formGroup {
+    width: 100%;
+  }
+  .submitButtonContainer {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .page-title {
+    font-size: 44px;
+    padding: 0;
+  }
+
+  .header {
+    gap: 10px;
+  }
+  .headerLinksContainer {
+    padding-bottom: 0;
+    padding-right: 15px;
+    gap: 15px;
+  }
+  .headerLinks {
+    gap: 10px;
+  }
+  .socialLinks {
+    margin: 0;
+  }
+  .link {
+    font-size: 16px;
+  }
+  .headerTitle {
+    padding: 0;
+  }
+  .headerLogo {
+    width: 80px;
+  }
+
+  .order-Intro span {
+    font-size: 38px;
+  }
+  .order-Intro p {
+    font-size: 18px;
+  }
+  .orderFormContainer {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .orderForm .formGroup {
+    width: 100%;
+  }
+  .submitButtonContainer {
+    width: 100%;
+  }
 }
