@@ -162,9 +162,10 @@ body {
 }
 
 .orderButton {
-  padding: 15px 25px;
-  width: 100px;
+  padding: 10px 20px;
+  height: 75%;
   background-color: var(--text-color);
+  border: 2px solid transparent;
   color: #fff;
   font-family: "poppins", sans-serif;
   font-size: 18px;
@@ -193,22 +194,6 @@ body {
 .galleryButton:hover {
   background-color: var(--accent-color);
   color: #fff;
-}
-
-.homeSocialLinks {
-  margin-top: 20px;
-  display: flex;
-  gap: 10px;
-}
-
-.home-social-link {
-  text-decoration: none;
-  color: var(--text-color);
-  font-size: 36px;
-}
-
-.home-social-link:hover {
-  color: var(--accent-color);
 }
 
 .homeContentRight {
@@ -690,5 +675,3 @@ body {
 /* Medium Devices (Landscape tablets, 768px and up) */
 
 /* Large Devices (Laptops/desktops, 992px and up) */
-
-/* Extra Large Devices (Large laptops and desktops, 1200px and up) */
