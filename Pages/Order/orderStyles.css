@@ -199,6 +199,75 @@ body {
 }
 
 /* Media Queries */
+
+/* Extra Small Devices (Small phones, 320px and down) */
+@media only screen and (max-width: 320px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .headerTitle {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .headerLinksContainer {
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+  }
+
+  .headerLinks {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .socialLinks {
+    margin: 10px 0;
+  }
+
+  .order-Intro {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .order-Intro span {
+    font-size: 30px;
+  }
+
+  .order-Intro p {
+    font-size: 14px;
+  }
+
+  .orderFormContainer {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .orderForm .formGroup {
+    width: 100%;
+    margin-bottom: 0.8rem;
+  }
+
+  .orderForm label {
+    font-size: 14px;
+  }
+
+  .orderForm input,
+  .orderForm textarea {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .submitButton {
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
 /* Regular mobile Devices (Phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .page-title {
@@ -233,24 +302,48 @@ body {
   .headerLogo {
     width: 80px;
   }
+
+  .order-Intro {
+    width: 100%;
+    padding: 0 15px;
+  }
+
   .order-Intro span {
     font-size: 35px;
   }
+
   .order-Intro p {
     font-size: 16px;
   }
+
   .orderFormContainer {
     width: 90%;
-    margin: 1rem auto;
+    padding: 20px;
   }
+
   .orderForm .formGroup {
     width: 100%;
+    margin-bottom: 1rem;
   }
-  .submitButtonContainer {
+
+  .orderForm label {
+    font-size: 15px;
+  }
+
+  .orderForm input,
+  .orderForm textarea {
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  .submitButton {
     width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
   }
 }
 
+/* Small Devices (Portrait tablets and large phones, 600px to 767px) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   .page-title {
     font-size: 44px;
@@ -272,77 +365,223 @@ body {
     margin: 0;
   }
   .link {
-    font-size: 16px;
+    font-size: 18px;
   }
   .headerTitle {
     padding: 0;
   }
   .headerLogo {
-    width: 80px;
+    width: 90px;
+  }
+
+  .order-Intro {
+    width: 100%;
+    padding: 0 20px;
   }
 
   .order-Intro span {
-    font-size: 38px;
+    font-size: 40px;
   }
+
   .order-Intro p {
     font-size: 18px;
   }
+
   .orderFormContainer {
-    width: 90%;
-    margin: 1rem auto;
+    width: 85%;
+    padding: 25px;
   }
+
   .orderForm .formGroup {
     width: 100%;
+    margin-bottom: 1.2rem;
   }
-  .submitButtonContainer {
+
+  .orderForm label {
+    font-size: 16px;
+  }
+
+  .orderForm input,
+  .orderForm textarea {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .submitButton {
     width: 100%;
+    padding: 12px 24px;
+    font-size: 16px;
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+/* Medium Devices (Landscape tablets, 769px to 992px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .page-title {
-    font-size: 44px;
+    font-size: 48px;
     padding: 0;
   }
 
-  .header {
-    gap: 10px;
-  }
   .headerLinksContainer {
     padding-bottom: 0;
     padding-right: 15px;
     gap: 15px;
   }
   .headerLinks {
-    gap: 10px;
+    gap: 15px;
   }
   .socialLinks {
     margin: 0;
   }
   .link {
-    font-size: 16px;
+    font-size: 18px;
   }
   .headerTitle {
     padding: 0;
   }
   .headerLogo {
-    width: 80px;
+    width: 100px;
+  }
+
+  .order-Intro {
+    width: 100%;
+    padding: 0 30px;
   }
 
   .order-Intro span {
-    font-size: 38px;
+    font-size: 45px;
   }
+
   .order-Intro p {
+    font-size: 20px;
+  }
+
+  .orderFormContainer {
+    width: 80%;
+    padding: 30px;
+  }
+
+  .orderForm .formGroup {
+    width: 48%;
+    margin-bottom: 1.5rem;
+  }
+
+  .orderForm label {
+    font-size: 16px;
+  }
+
+  .orderForm input,
+  .orderForm textarea {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .submitButton {
+    width: auto;
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+}
+
+/* Large Devices (Laptops/desktops, 993px to 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+  .page-title {
+    font-size: 48px;
+    padding: 0;
+  }
+
+  .headerLinksContainer {
+    padding-bottom: 0;
+    padding-right: 15px;
+    gap: 15px;
+  }
+  .headerLinks {
+    gap: 15px;
+  }
+  .socialLinks {
+    margin: 0;
+  }
+  .link {
     font-size: 18px;
   }
+  .headerTitle {
+    padding: 0;
+  }
+  .headerLogo {
+    width: 100px;
+  }
+
+  .order-Intro {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .order-Intro span {
+    font-size: 50px;
+  }
+
+  .order-Intro p {
+    font-size: 22px;
+  }
+
   .orderFormContainer {
-    width: 90%;
-    margin: 1rem auto;
+    width: 800px;
+    padding: 35px;
   }
+
   .orderForm .formGroup {
-    width: 100%;
+    width: 48%;
+    margin-bottom: 1.5rem;
   }
-  .submitButtonContainer {
-    width: 100%;
+
+  .orderForm label {
+    font-size: 16px;
+  }
+
+  .orderForm input,
+  .orderForm textarea {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .submitButton {
+    width: auto;
+    padding: 12px 35px;
+    font-size: 16px;
+  }
+}
+
+/* Extra Large Devices (Large desktops, 1401px and up) */
+@media only screen and (min-width: 1401px) {
+  .order-Intro {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .orderFormContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  .orderForm .formGroup {
+    width: 48%;
+    margin-bottom: 1.5rem;
+  }
+
+  .orderForm label {
+    font-size: 16px;
+  }
+
+  .orderForm input,
+  .orderForm textarea {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .submitButton {
+    width: auto;
+    padding: 12px 40px;
+    font-size: 16px;
   }
 }

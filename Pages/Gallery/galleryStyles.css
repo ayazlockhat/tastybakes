@@ -158,9 +158,65 @@ body {
 }
 
 /* Media Queries */
+
+/* Extra Small Devices (Small phones, 320px and down) */
+@media only screen and (max-width: 320px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .headerTitle {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .headerLinksContainer {
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+  }
+
+  .headerLinks {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .socialLinks {
+    margin: 10px 0;
+  }
+
+  .gallery-Intro {
+    padding: 0px 10px;
+  }
+
+  .gallery-Intro h1 {
+    font-size: 35px;
+    padding: 0;
+  }
+
+  .gallery-Intro p {
+    font-size: 14px;
+  }
+
+  .gallery-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .gallery-item {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+  }
+}
+
+/* Regular mobile Devices (Phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .gallery-Intro {
-    padding: 0px 10px
+    padding: 0px 10px;
   }
   .gallery-Intro h1 {
     font-size: 40px;
@@ -197,18 +253,21 @@ body {
   }
   .gallery-container {
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
   }
 
   .gallery-item {
-    width: 180px;
+    width: 100%;
     height: 180px;
-    margin: 2.5px;
+    margin: 0;
   }
 }
 
+/* Small Devices (Portrait tablets and large phones, 600px to 767px) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   .gallery-Intro {
-    padding: 0px 20px
+    padding: 0px 20px;
   }
   .gallery-Intro h1 {
     font-size: 44px;
@@ -239,29 +298,33 @@ body {
   .headerLogo {
     width: 90px;
   }
+
   .gallery-Intro p {
     font-size: 18px;
   }
   .gallery-container {
     grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 15px;
   }
 
   .gallery-item {
-    width: 190px;
+    width: 100%;
     height: 190px;
-    margin: 5px;
+    margin: 0;
   }
 }
 
 /* Medium Devices (Landscape tablets, 769px to 992px) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .gallery-Intro {
-    padding: 0px 40px
+    padding: 0px 30px;
   }
   .gallery-Intro h1 {
     font-size: 48px;
     padding: 0;
   }
+
   .headerLinksContainer {
     padding-bottom: 0;
     padding-right: 15px;
@@ -276,34 +339,40 @@ body {
   .link {
     font-size: 18px;
   }
+
   .headerTitle {
     padding: 0;
   }
   .headerLogo {
     width: 100px;
   }
+
   .gallery-Intro p {
     font-size: 20px;
   }
   .gallery-container {
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
   }
 
   .gallery-item {
-    width: 245px;
-    height: 245px;
-    margin: 5px;
+    width: 100%;
+    height: 250px;
+    margin: 0;
   }
 }
 
+/* Large Devices (Laptops/desktops, 993px to 1200px) */
 @media only screen and (min-width: 1025px) and (max-width: 1400px) {
   .gallery-Intro {
-    padding: 0px 60px
+    padding: 0px 40px;
   }
   .gallery-Intro h1 {
-    font-size: 50px;
+    font-size: 52px;
     padding: 0;
   }
+
   .headerLinksContainer {
     padding-bottom: 0;
     padding-right: 15px;
@@ -318,19 +387,68 @@ body {
   .link {
     font-size: 18px;
   }
+
   .headerTitle {
     padding: 0;
   }
   .headerLogo {
     width: 100px;
   }
+
+  .gallery-Intro p {
+    font-size: 22px;
+  }
   .gallery-container {
     grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 25px;
   }
 
   .gallery-item {
-    width: 245px;
-    height: 245px;
-    margin: 5px;
+    width: 100%;
+    height: 300px;
+    margin: 0;
   }
+}
+
+/* Extra Large Devices (Large desktops, 1401px and up) */
+@media only screen and (min-width: 1401px) {
+  .gallery-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .gallery-item {
+    width: 100%;
+    height: 350px;
+    margin: 0;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.orderButton {
+  padding: 10px 20px;
+  height: 75%;
+  background-color: var(--text-color);
+  border: 2px solid transparent;
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.orderButton:hover {
+  background-color: var(--accent-color);
 }
